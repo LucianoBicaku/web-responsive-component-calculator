@@ -1,38 +1,75 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&family=Roboto+Slab:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #581b98;
+  color: #f3558e;
+}
+header {
   text-align: center;
+  font-size: 2rem;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  font-family: "Arvo", serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  outline: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid-2 {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  font-family: "Roboto Slab", serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.grid-2-item label {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.grid-2-item label i {
+  margin-top: 2vh;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #c5e3f6;
+}
+.grid-2-item label input {
+  width: 60%;
+  height: 5vh;
+  border-radius: 10px;
+  padding-left: 10px;
+  background-color: #6e24bd;
+  border: none;
+  color: #88bef5;
+}
+::placeholder {
+  color: #88bef5;
+  text-align: center;
+}
+.grid-2 {
+  position: relative;
+}
+.grid-2 button {
+  border: none;
+  height: 5vh;
+  width: 4vw;
+  background-color: #f3558e;
+  outline: none;
   color: white;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result-form {
+  margin-top: 10%;
 }
